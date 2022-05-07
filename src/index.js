@@ -46,6 +46,7 @@ const Keyboard = {
        
         //create elements
         const textArea = document.querySelector(".use-keyboard-input")
+        const container = document.querySelector(".container")
         this.textArea = textArea;
         
         this.elements.main = document.createElement("div");
@@ -54,9 +55,9 @@ const Keyboard = {
         this.elements.main.classList.add("keyboard", "keyboard--hidden");
         this.elements.keysContainer.classList.add("keyboard__keys");
 
-        this.elements.keysContainer.appendChild(createKeys.call(Keyboard)); //create elements from create JS
+        this.elements.keysContainer.append(createKeys.call(Keyboard)); //create elements from create JS
         this.elements.keys = this.elements.keysContainer.querySelectorAll(".keyboard__key");
-
+           
 
         //prevent losefocus!
         this.elements.main.addEventListener("mousedown", (e) => {
@@ -64,8 +65,8 @@ const Keyboard = {
           
         }, false);
 
-        this.elements.main.appendChild(this.elements.keysContainer)
-        document.body.firstElementChild.appendChild(this.elements.main)
+        this.elements.main.append(this.elements.keysContainer)
+        container.append(this.elements.main)
 
         // Automatically use keyboard for elements with .use-keyboard-input
 

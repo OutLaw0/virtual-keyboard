@@ -6,8 +6,8 @@ export function createHeader() {
 
     container.classList.add("container");
 
-    document.body.appendChild(container)
-    document.body.appendChild(footer)
+    document.body.append(container)
+    document.body.append(footer)
 
     const new_desc_inner = `<h1>RSS Virtual Keyboard w/ Vanilla JS</h1>
     <h3>Description</h3>
