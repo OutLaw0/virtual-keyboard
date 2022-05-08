@@ -1,0 +1,115 @@
+:root {
+    --white: #fff;
+    --maintheme: #9d75c2;
+    --black: #333;
+   }
+   *,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+input,button,textarea{font-family:inherit;}
+textarea:focus{
+    border: 1px solid var(--maintheme);
+    outline: 1px solid var(--maintheme);
+    border-radius: 3px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    font-weight: normal;
+    font-size: 2.5em;
+    color: var(--maintheme);
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;color:inherit}
+button{cursor: pointer;}
+a, a:visited, a:link{text-decoration: none;color:inherit;}
+a:hover{text-decoration: none; color: var(--maintheme)}
+nav,footer,header,aside{display: block;}
+ul, li {
+    line-height: 25px;
+}
+li .material-icons {
+margin-top: -6px;
+}
+.container{
+    display: flex;
+    height: 50vh;
+    max-width: 1100px;
+    position: relative;
+    margin: 0 auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90vw;
+
+}
+.use-keyboard-input{
+    position: absolute; 
+    top: 178px; 
+    right: 0;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+
+
+.footer__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.footer-copyright__element{
+    display: flex;
+    align-items: center;
+
+}
+.year {
+    padding: 0 20px;
+
+}
+
+.github-username, .rss{
+ 
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+@media (max-width: 900px){
+
+    ul, li {
+        line-height: 25px;
+        max-width: 380px;
+        font-size: 14px;
+    }
+}
+    @media (max-width: 768px){
+     
+
+        .footer__container{
+            flex-wrap: wrap;
+
+            > div, a, p {
+                line-height: 2.5rem;
+            } 
+        }
+       
+         
+        }
+
+ 
