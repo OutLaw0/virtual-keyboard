@@ -82,10 +82,7 @@ const Keyboard = {
             });
 
             textArea.focus();
-            //setTimeout(() => textArea.focus(), 300);
-        /*  this.open(textArea.value, currentValue => {
-            textArea.value = currentValue;
-        });*/
+    
     },
 
     _triggerEvent(handlerName) { //set textarea.value
@@ -112,7 +109,7 @@ const Keyboard = {
             print.call(Keyboard, key, type)
         }
         if (type == 'mousedown' || type == 'mouseup') { 
-           // console.log(e.target.classList)
+     
             if ( e.target.classList.contains("keyboard__key") || e.target.classList.contains("material-icons") ||  e.target.classList.contains("special-key") ) {
                 const key = e.target.textContent
                 print.call(Keyboard, key, type)
@@ -183,8 +180,6 @@ const Keyboard = {
         this.elements.main.classList.add("keyboard--hidden");
     }
 
-    /*print(){
-    }*/
     
 };
 

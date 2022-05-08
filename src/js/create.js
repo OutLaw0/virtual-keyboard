@@ -1,5 +1,3 @@
-//import {keyLayout} from './base.js'
-
 export function createHeader() {
     const container = document.createElement("div");
     const footer = document.createElement("footer");
@@ -65,25 +63,21 @@ export function createKeys() {
             case "backspace":
 
                 keyElement.classList.add("keyboard__key--wide");
-                //keyElement.classList.add(this.keyLayout.keyboardOrder[index])
                 keyElement.innerHTML = createIconHtml("backspace")
             
                 break;
 
             case "Ctrl":
-                // keyElement.classList.add("keyboard__key--wide");
             
                 keyElement.innerHTML = createSpecKey("Ctrl")
                 break;
 
             case "Alt":
-                // keyElement.classList.add("keyboard__key--wide");
-            
+               
                 keyElement.innerHTML = createSpecKey("Alt")
                 break;
 
             case "Tab":
-             //   keyElement.classList.add("keyboard__key--semi-wide")
                 keyElement.innerHTML = createSpecKey("Tab")
                 
                 break;
@@ -120,7 +114,6 @@ export function createKeys() {
                 break;
 
             case "Del":
-               // keyElement.classList.add("keyboard__key--semi-wide");
                 keyElement.innerHTML = createSpecKey("Del");
 
                 break;
